@@ -86,27 +86,27 @@
     <div class="container">
 
         <div class="card">
-            <div class="title">Operating Systems</div>
+            <div class="title">Computer Data Security and Privacy</div>
             <select data-hours="3"></select>
         </div>
 
         <div class="card">
-            <div class="title">Software Engineering</div>
+            <div class="title">Human Computer Interaction</div>
             <select data-hours="3"></select>
         </div>
 
         <div class="card">
-            <div class="title">Algorithms</div>
+            <div class="title">Web-Based Systems</div>
             <select data-hours="3"></select>
         </div>
 
         <div class="card">
-            <div class="title">Computer Architecture</div>
+            <div class="title">Automata</div>
             <select data-hours="3"></select>
         </div>
 
         <div class="card">
-            <div class="title">Logic</div>
+            <div class="title">Math</div>
             <select data-hours="3"></select>
         </div>
 
@@ -135,15 +135,15 @@
         });
 
         function getLetter(gpa) {
-            if (gpa >= 5.00) return "A+";
-            if (gpa >= 4.75) return "A";
-            if (gpa >= 4.50) return "B+";
-            if (gpa >= 4.00) return "B";
-            if (gpa >= 3.50) return "C+";
-            if (gpa >= 3.00) return "C";
-            if (gpa >= 2.50) return "D+";
-            if (gpa >= 2.00) return "D";
-            return "F";
+            if (gpa >= 4.00 && gpa <= 5.00) return "A+, Excellent High";
+            if (gpa >= 3.75 && gpa < 4.00) return "A, Excellent";
+            if (gpa >= 3.50 && gpa < 3.75) return "B+, Superior";
+            if (gpa >= 3.00 && gpa < 3.50) return "B, Very Good";
+            if (gpa >= 2.50 && gpa < 3.00) return "C+, Above Average";
+            if (gpa >= 2.00 && gpa < 2.50) return "C, Good";
+            if (gpa >= 1.50 && gpa < 2.00) return "D+, High Pass";
+            if (gpa >= 1.00 && gpa < 1.50) return "D, Pass";
+            return "F, Fail";
         }
 
         function calcGPA() {
@@ -172,4 +172,5 @@
 
 </body>
 </html>
+
 
